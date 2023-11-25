@@ -1,0 +1,16 @@
+[package]
+name = "jwt-auth"
+authors = ["Doraemon"]
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+jsonwebtoken = "=7.2"
+serde = { version = "1.0.193", features = ["derive"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync", "time"] }
+warp = "0.3"
+serde_json = "1.0"
+thiserror = "1.0"
+chrono = "0.4"
